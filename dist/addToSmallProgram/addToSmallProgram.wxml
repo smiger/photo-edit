@@ -1,0 +1,11 @@
+<view class="addToSmallProgramClass" wx:if="{{showAddMeBtn}}">
+    <view class="center_text_div_class">
+        <text>点击</text>
+        <image class="more" src="/images/sdk/add_to_min_program_more.png"></image>
+        <text>添加到我的小程序后更容易找到哦~</text>
+    </view>
+    <view style="width: 37rpx;height: 43rpx;position: absolute;top: 50%;transform: translateY(-50%);right: 123rpx;">
+        <image class="arrow" src="/images/sdk/add_to_min_program_arrow.png"></image>
+    </view>
+    <image bindtap="onClickAddToMinProgramCloseBtn" class="as-close" src="/images/sdk/add_to_min_program_close.png"></image>
+</view>

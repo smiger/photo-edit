@@ -1,0 +1,63 @@
+<add-to-small-program class="addToSmallProgram"></add-to-small-program>
+<view class="cut-image-view" style="margin-top: 32rpx">
+    <view class="cut-image-top-view">
+        <image class="logo" src="{{logo}}"></image>
+        <view class="cut-image-text">
+            <text class="text-name">{{name}}</text>
+            <text class="text-desc">亲爱的，我的心里都是你</text>
+        </view>
+    </view>
+    <view class="cutimage-wrap">
+        <image class="cutImage" src="{{cutImageSrc}}"></image>
+    </view>
+</view>
+<view class="cu-bar bg-gray margin-top">
+    <view class="action text-red">
+        <text class="cuIcon-warnfill text-red"></text>照片已经保存到相册，请知悉
+	</view>
+</view>
+<view class="cut-images-view" wx:if="{{errorImgs.length>0}}">
+    <text class="text-gonglv">存在下载失败的图片：</text>
+    <text class="text-paixu">请点击重新下载按钮重试，如果无效请联系客服</text>
+    <view class="box-image-view">
+        <view class="box" wx:for="{{errorImgs}}" wx:key="item">
+            <image class="boxBg" src="{{item.url}}"></image>
+            <text class="boxNo">{{item.no}}</text>
+        </view>
+    </view>
+    <view class="flex justify-start margin-right-lg">
+        <button bindtap="reDownload" class="flex-sub cu-btn round lines-purple shadow margin-xs margin-tb-sm ">重新下载</button>
+        <button class="flex-sub cu-btn round lines-purple shadow margin-xs margin-tb-sm " groupId="978521809" openType="{{connectType}}">联系客服</button>
+    </view>
+</view>
+<view class="line"></view>
+<view class="cut-images-view" wx:if="{{openFlag}}">
+    <text class="text-gonglv">攻略：</text>
+    <text class="text-paixu">请按照1-9的顺序上传空间或朋友圈，即可得到最佳效果</text>
+    <view class="box-image-view">
+        <view class="box" wx:for="{{boxItems}}" wx:key="item">
+            <image class="boxBg" src="{{item.src}}"></image>
+            <text class="boxNo">{{item.no}}</text>
+        </view>
+    </view>
+</view>
+<view class="buttonview-container">
+    <view class="buttonview" wx:if="{{openFlag}}">
+        <button class="ricon shareButton" id="{{mode==1?'cutresult_share':'loveland_share'}}" openType="share" shareType="{{2}}">
+            <image class="ricon" src="../../images/share.png"></image>
+        </button>
+        <text>{{shareButtonText}}</text>
+    </view>
+    <view class="space"></view>
+    <view bindtap="continueTap" class="buttonview" id="{{mode==1?'cutresult_cut':'loveland_index'}}">
+        <image class="ricon" src="../../images/logo.png"></image>
+        <text>{{mode==1?'继续切图':'继续拼图'}}</text>
+    </view>
+    <view class="space"></view>
+    <view class="buttonview">
+        <button class="ricon shareButton" groupId="978521809" openType="{{connectType}}">
+            <image class="ricon" src="../../images/group.png"></image>
+        </button>
+        <text>不懂问问</text>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<import src="../../../dist/we-cropper/we-cropper-love.wxml"></import>
+<view class="real-wrapper-view" style="position: fixed;left:750rpx;">
+    <canvas canvasId="professRealCanvas" style="position: absolute;width: {{professRealCanvasWidth}}px;height: {{professRealCanvasHeight}}px;"></canvas>
+</view>
+<view class="cut-wrapper-view" style="width:{{cutWidth}}px;height:{{cutHeight}}px;margin-top:{{cutImageViewTop}}px">
+    <image src="{{imagePre}}" style="width:{{cutWidth}}px;height:{{cutHeight}}px"></image>
+    <template is="we-cropper-love" data="{{...cropperOpt}}"></template>
+</view>
+<text class="guideMessage text-center text-sm">{{guideMessage}}</text>
+<div class="bottomWrap">
+    <form bindsubmit="sendFormId" reportSubmit="true">
+        <button bindtap="tapBtn" class="downBtn bg-gradual-red round" formType="submit">
+      {{btnText}}
+    </button>
+    </form>
+    <button class="shareBtn" openType="share">
+        <image class="shareIcon" src="../../../images/6.png"></image>
+    </button>
+    <button bindtap="onHome" class="shareBtn">
+        <text class="cuIcon-homefill lg text-white"></text>
+    </button>
+</div>
+<openSettingDialog class="openSettingDialog"></openSettingDialog>

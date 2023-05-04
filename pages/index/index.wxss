@@ -1,0 +1,37 @@
+.button-grid-view {
+    width: 175rpx;
+    height: 165rpx;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 16rpx;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+}
+
+.icon-text {
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+}
+
+.flow {
+    margin-top: 30rpx;
+}
+
+.png {
+    height: 120rpx;
+    width: 120rpx;
+}
+
+.adContainer {
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.flow-img {
+    width: 236rpx;
+    height: 236rpx;
+}

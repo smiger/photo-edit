@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "openSettingDialog": "../../dist/openSettingDialog/openSettingDialog",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

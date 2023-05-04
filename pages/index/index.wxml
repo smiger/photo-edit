@@ -1,0 +1,64 @@
+<!-- <add-to-small-program class="addToSmallProgram"></add-to-small-program> -->
+<view>
+    <view class="bg-white grid col-4 text-center">
+        <view wx:for="{{iconList}}" wx:key="icon">
+            <button bindtap="onNavigate" class="bg-white button-grid-view" data-url="{{item.url}}" wx:if="{{item.type==0}}">
+                <image class="png lg" mode="aspectFit" src="{{item.icon}}"></image>
+                <text class="text-df icon-text">{{item.name}}</text>
+            </button>
+            <button class="bg-white button-grid-view" groupId="978521809" openType="{{connectType}}" wx:if="{{item.type==1}}">
+                <image class="png lg" mode="aspectFit" src="{{item.icon}}"></image>
+                <text class="text-df icon-text">{{item.name}}</text>
+            </button>
+            <navigator class="bg-white button-grid-view" appId="{{item.appid}}" path="pages/index/index" target="miniProgram" wx:if="{{item.type==2}}">
+                <image class="png lg" mode="aspectFit" src="{{item.icon}}"></image>
+                <text class="text-df icon-text">{{item.name}}</text>
+            </navigator>
+        </view>
+    </view>
+    <view class="adContainer" wx:if="{{ad.showAd && !noAd}}">
+        <ad binderror="onAdLoadFail" bindload="onAdLoadSuccess" unitId="{{ad.id}}"></ad>
+        <official-account></official-account>
+    </view>
+    <view class="adContainer" wx:if="{{noAd}}">
+      <navigator appId="wxb9243b0a739dd4db" path="pages/index/index" target="miniProgram">
+            <image mode="widthFix" src="/images/banner003.png" style="width: 100%;"></image>
+      </navigator>
+    </view>
+        <view class="flow">
+        <view class="cu-card dynamic no-card">
+            <view class="cu-item shadow">
+                <view class="cu-list menu-avatar comment solids-top" wx:for="{{flowList}}" wx:key="item">
+                    <view class="cu-item">
+                        <image class="cu-avatar round" src="/images/result_logo.png"></image>
+                        <view class="content">
+                            <view>可可</view>
+                            <view class="text-content text-df">
+                {{item.desc}}
+              </view>
+                            <view class="grid flex-sub margin-top-sm col-1 grid-square margin-right-xl">
+                                <view class="bg-img">
+                                    <image lazyLoad class="flow-img" src="{{item.preImg}}"></image>
+                                </view>
+                            </view>
+                            <view class="margin-top-sm flex justify-between">
+                                <view class="text-gray text-df">{{item.createTime}}</view>
+                            </view>
+                            <view class=" flex flex-direction margin-right-lg" wx:if="{{item.artcleId==0||!share}}">
+                                <button bindtap="tapDetail" class="cu-btn round lines-purple shadow margin-tb-sm lg " data-id="{{item.photoId}}" data-index="{{index}}" data-type="{{item.type}}">一键制作</button>
+                            </view>
+                            <view class="flex justify-start margin-right-lg" wx:else>
+                                <button bindtap="tapDetail" class="flex-sub cu-btn round lines-purple shadow margin-xs margin-tb-sm " data-id="{{item.photoId}}" data-index="{{index}}" data-type="{{item.type}}">一键制作</button>
+                                <button bindtap="tapArtcle" class="flex-sub cu-btn round lines-purple shadow margin-xs margin-tb-sm " data-artcle="{{item.artcleId}}" data-id="{{item.photoId}}" data-index="{{index}}" data-type="{{item.type}}">教程</button>
+                            </view>
+                        </view>
+                    </view>
+                    <view wx:if="{{index!=0&&(index+1)%3==0}}">
+                        <ad unit-id="{{flowAd.id}}" ad-type="video" ad-theme="white"></ad>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="cu-load bg-red {{!isLoad?'loading':'over'}}" wx:if="{{isShowLodding}}"></view>
+    </view>
+</view>

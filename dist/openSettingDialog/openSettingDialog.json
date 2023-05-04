@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "openSettingDialog": "openSettingDialog",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

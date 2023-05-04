@@ -1,0 +1,10 @@
+<cover-view class="component-container" wx:if="{{show}}">
+    <cover-view bind:tap="onMaskBgTap" class="maskBg"></cover-view>
+    <cover-view class="card">
+        <cover-view class="title">请打开【相册】权限后继续保存</cover-view>
+        <cover-view class="line"></cover-view>
+        <cover-view class="bottom">
+            <button bindopensetting="settingCallback" class="btn-open" openType="openSetting">打开权限</button>
+        </cover-view>
+    </cover-view>
+</cover-view>

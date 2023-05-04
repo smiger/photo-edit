@@ -1,0 +1,168 @@
+page {
+    background-color: #ffffff;
+}
+
+.title-view {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 88rpx;
+}
+
+.back-view {
+    left: 0rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    position: absolute;
+}
+
+.cut-image-view {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150rpx;
+}
+
+.cut-image-top-view {
+    width: 100%;
+    display: flex;
+}
+
+.cut-image-top-view .logo {
+    width: 62rpx;
+    height: 62rpx;
+    margin-left: 64rpx;
+}
+
+.cut-image-top-view .cut-image-text {
+    margin-left: 23rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-name {
+    font-size: 24rpx;
+    color: #586A92;
+}
+
+.text-desc {
+    font-size: 24rpx;
+    color: #262626;
+}
+
+.cutimage-wrap {
+    margin-top: 17rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.cutimage-wrap .cutImage {
+    width: 426rpx;
+    height: 426rpx;
+}
+
+.box-image-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.line {
+    width: 100%;
+    height: 1rpx;
+    margin-top: 32rpx;
+    background-color: #dadada;
+}
+
+.cut-images-view {
+    display: flex;
+    flex-direction: column;
+    padding-left: 64rpx;
+}
+
+.cut-images-view .text-gonglv {
+    font-size: 32rpx;
+    color: #262626;
+    margin-top: 28rpx;
+}
+
+.cut-images-view .text-paixu {
+    font-size: 28rpx;
+    color: #666666;
+    margin-top: 25rpx;
+}
+
+.cut-images-view .box-image-view {
+    margin-top: 21rpx;
+}
+
+.box-image-view .box {
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 8rpx;
+    margin-bottom: 8rpx;
+    position: relative;
+}
+
+.box-image-view .box .boxBg {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.box-image-view .box .boxNo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 31rpx;
+    height: 31rpx;
+    line-height: 31rpx;
+    text-align: center;
+    background-color: #50baec;
+    font-size: 20rpx;
+    color: #FFF;
+}
+
+.cut-share-view {
+    display: flex;
+}
+
+.ricon {
+    width: 104rpx;
+    height: 104rpx;
+}
+
+.buttonview-container {
+    margin-top: 32rpx;
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+.buttonview-container .space {
+    width: 90rpx;
+}
+
+.shareButton {
+    border: none;
+    padding: 0;
+    background: rgba(0,0,0,0);
+}
+
+.buttonview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonview text {
+    font-size: 32rpx;
+    color: #666666;
+    margin-top: 10rpx;
+}

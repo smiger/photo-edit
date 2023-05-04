@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/spliceMenu/spliceMenu",
+    "pages/IMG/upload/upload",
+    "pages/pintukz/index/index",
+    "pages/pintukz/edit/edit",
+    "pages/pintukz/about/about",
+    "pages/pintukz/poster/poster",
+    "pages/pintukz/logs/logs",
+    "pages/pintukz/whc/whc",
+    "pages/heart/index",
+    "pages/heart/detail/detail",
+    "pages/cutresult/cutresult"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "可可心形拼图",
+    "navigationBarTextStyle": "black"
+  },
+    "navigateToMiniProgramAppIdList": [
+      "wxb9243b0a739dd4db",
+      "wxdeb78ebfdbc7076a"
+    ],
+  "sitemapLocation": "sitemap.json"
+}

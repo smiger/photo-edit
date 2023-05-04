@@ -1,0 +1,151 @@
+.page {
+    width: 100%;
+    height: 100%;
+    background: #FFC0CB;
+}
+
+.imageContext {
+    width: 100%;
+    height: 1000rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 750rpx;
+    height: 750rpx;
+}
+
+.guideMessage {
+    position: absolute;
+    left: 0;
+    bottom: 150rpx;
+    width: 100%;
+    height: 100rpx;
+    color: #666666;
+}
+
+.bottomWrap {
+    width: 100%;
+    height: 80rpx;
+    position: absolute;
+    left: 0;
+    bottom: 30rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.downBtn {
+    width: 430rpx;
+    height: 80rpx;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: #808080;
+    border-radius: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25rpx;
+    margin-left: 50rpx;
+}
+
+.downBtn .downIcon {
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 10rpx;
+}
+
+.shareBtn {
+    color: #fff;
+    width: 80rpx;
+    height: 80rpx;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: #808080;
+    border-radius: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.shareBtn .shareIcon {
+    width: 30rpx;
+    height: 33rpx;
+}
+
+.helpBar {
+    width: 100%;
+    height: 36rpx;
+    background-color: #FFC0CB;
+    font-size: 24rpx;
+    padding-left: 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.cut-wrapper-view {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.cut-wrapper-view-hide {
+    display: none;
+}
+
+.cropper-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.cropper-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28rpx;
+}
+
+.cropper-buttons .upload,.cropper-buttons .getCropperImage {
+    width: 50%;
+    text-align: center;
+}
+
+.cropper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cropper-buttons {
+    background-color: rgba(0,0,0,0.95);
+    font-weight: bold;
+    color: #fff;
+    border-top: 1px solid #666;
+}
+
+.cropper-buttons view:active {
+    background-color: rgba(255,255,255,0.3);
+}

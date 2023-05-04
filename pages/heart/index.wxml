@@ -1,0 +1,10 @@
+<view class="page">
+    <scroll-view class="padding" scrollY="true">
+        <view class="grid col-2 grid-square">
+            <view bindtap="tapDetail" class="bg-img" data-id="{{item.id}}" data-index="{{index}}" wx:for="{{heartList}}" wx:key="name">
+                <image lazyLoad class="flow-img" src="{{item.preImg}}"></image>
+            </view>
+        </view>
+        <view class="cu-load bg-red {{!isLoad?'loading':'over'}}" wx:if="{{isShowLodding}}"></view>
+    </scroll-view>
+</view>
