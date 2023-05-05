@@ -19,3 +19,4 @@
 
   2. 打开微信开发者工具，点击“小程序项目”按钮，输入小程序 AppID，项目目录选择下载的代码目录，点击确定创建小程序项目。
 
+  3. 后台部署方式详见[https://github.com/smiger/photo-edit-server](https://github.com/smiger/photo-edit-server)
