@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/spliceMenu/spliceMenu",
     "pages/IMG/upload/upload",
     "pages/pintukz/index/index",
     "pages/pintukz/edit/edit",
